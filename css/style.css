@@ -220,17 +220,17 @@ header .cta:active {
   width: 15px;
   height: 15px;
   background: #FFFFFF;
-  border: 1px solid #f9225e;
+  border: 1px solid black;
   box-sizing: border-box;
   border-radius: 50%;
   margin-right: 30px;
   cursor: pointer;
 }
 .slick-dots li.slick-active {
-  background: #f9225e;
+  background: black;
   border-radius: 50%;
   cursor: pointer;
-  border: 1px solid #f9225e;
+  border: 1px solid black;
 }
 .slick-dots li.slick-active button {
   width: 15px;
