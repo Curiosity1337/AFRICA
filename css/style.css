@@ -13,10 +13,10 @@ a:hover {
   text-decoration: none;
 }
 .bg-cream {
-  background-color: #FFFFF0;
+  background-color: #cab9b2;
 }
 body {
-  background-color: #eaeaea;
+  background-color: #6d6d6d;
 }
 .wrapper {
   width: 100%;
@@ -177,7 +177,7 @@ header .cta:active {
   transform: scale(0.96);
 }
 .service {
-  background-color: #FFFFF0;
+  background-color: #cab9b2;
   clip-path: polygon(0 0, 0 93%, 75% 100%, 100% 93%, 100% 0);
   padding-bottom: 200px;
 }
@@ -185,7 +185,7 @@ header .cta:active {
   padding: 10px;
   box-shadow: 0px 4px 8px rgba(0, 0, 0, 0.18);
   box-sizing: border-box;
-  background-color: white;
+  background-color: #dddcdb;
   transition: all 0.6s ease;
 }
 .service .service-block:hover {
