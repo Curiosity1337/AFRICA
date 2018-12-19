@@ -16,7 +16,7 @@ a:hover {
   background-color: #FFFFF0;
 }
 body {
-  background-color: #f7f7f7;
+  background-color: #eaeaea;
 }
 .wrapper {
   width: 100%;
@@ -279,7 +279,7 @@ header .cta:active {
 }
 .feedback form .input {
   border: none;
-  background-color: #dedfe0;
+  background-color: #d1d1d1;
   color: black;
   padding: 10px;
   margin-bottom: 20px;
