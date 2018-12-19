@@ -13,7 +13,7 @@ a:hover {
   text-decoration: none;
 }
 .bg-cream {
-  background-color: #F5F5DC;
+  background-color: #FFFFF0;
 }
 body {
   background-color: #f7f7f7;
@@ -177,7 +177,7 @@ header .cta:active {
   transform: scale(0.96);
 }
 .service {
-  background-color: #F5F5DC;
+  background-color: #FFFFF0;
   clip-path: polygon(0 0, 0 93%, 75% 100%, 100% 93%, 100% 0);
   padding-bottom: 200px;
 }
