@@ -222,10 +222,10 @@ header .cta:active {
   cursor: pointer;
 }
 .slick-dots li.slick-active {
-  background: black;
+  background: #f9225e;
   border-radius: 50%;
   cursor: pointer;
-  border: 1px solid black;
+  border: 1px solid #f9225e;
 }
 .slick-dots li.slick-active button {
   width: 15px;
