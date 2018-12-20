@@ -30,7 +30,7 @@ body {
   font-size: 50px;
 }
 .block-caption .red-text {
-  color: #f9225e;
+  color: #004f34;
 }
 .block-description {
   margin: 20px auto;
@@ -51,9 +51,9 @@ header {
   color: white;
 }
 header .logo {
-  font-family: 'Roboto', sans-serif;
-  font-weight: 900;
-  font-size: 35px;
+  min-height: 100px;
+  background: url("../img/logo_white.png") center no-repeat;
+  background-size: cover;
 }
 header .nav-block {
   text-align: right;
@@ -62,12 +62,13 @@ header .nav-block .nav-block__list {
   list-style: none;
   display: block;
   float: right;
-  line-height: 300%;
+  line-height: 500%;
   height: 100%;
   margin: 0;
 }
 header .nav-block .nav-block__list li {
   display: inline;
+  font-size: 23px;
 }
 header .nav-block .nav-block__list li a {
   color: white;
@@ -77,18 +78,18 @@ header .nav-block .nav-block__list li a {
   margin-right: 1em;
 }
 header .nav-block .nav-block__list li a:hover {
-  color: #f9225e;
+  color: #004f34;
   transition: all 0.6s ease;
 }
 header .nav-icon {
   text-align: right;
-  line-height: 300%;
+  line-height: 500%;
 }
 header .toggle-menu {
   background-color: black;
   position: absolute;
   display: none;
-  top: 10%;
+  top: 12%;
   left: 5%;
   width: 90%;
 }
@@ -98,6 +99,7 @@ header .toggle-menu .toggle-menu__list {
 }
 header .toggle-menu .toggle-menu__list li {
   padding: 10px;
+  font-size: 30px;
 }
 header .toggle-menu .toggle-menu__list li a {
   color: white;
@@ -105,7 +107,7 @@ header .toggle-menu .toggle-menu__list li a {
   transition: all 0.6s ease;
 }
 header .toggle-menu .toggle-menu__list li a:hover {
-  color: #f9225e;
+  color: #004f34;
   transition: all 0.6s ease;
 }
 header .caption {
@@ -196,7 +198,7 @@ header .cta:active {
 .service .service-block .service-block__icon {
   margin: 20px auto;
   font-size: 45px;
-  color: #f9225e;
+  color: #004f34;
 }
 .service .service-block h3 {
   margin-top: 10px;
@@ -262,11 +264,65 @@ header .cta:active {
   background-color: black;
   transition: all 0.6s ease;
 }
+.prices {
+  clip-path: polygon(0 0, 0 100%, 100% 100%, 100% 0, 25% 7%);
+  min-height: 80vh;
+  position: relative;
+  bottom: -5vh;
+  padding-bottom: 5vh;
+}
+.prices .prices__wrapper {
+  padding: 15px;
+}
+.prices .prices__wrapper .prices__item {
+  background-color: #d1d1d1;
+  min-height: 321px;
+  position: relative;
+}
+.prices .prices__wrapper .prices__item * {
+  position: static;
+}
+.prices .prices__wrapper .prices__item .prices__caption {
+  font-weight: bold;
+  font-size: 25px;
+  padding: 10px;
+  border-top: 1px solid #004f34;
+  border-bottom: 1px solid #004f34;
+}
+.prices .prices__wrapper .prices__item .prices__list {
+  padding: 10px;
+  list-style: none;
+  font-size: 18px;
+}
+.prices .prices__wrapper .prices__item .prices__bottom {
+  border-bottom: 1px solid #004f34;
+  border-top: 1px solid #004f34;
+  position: absolute;
+  width: 100%;
+  bottom: 0;
+}
+.prices .prices__wrapper .prices__item .prices__bottom .prices__button {
+  color: #f7f7f7;
+  background-color: #004f34;
+  border: 1px solid #004f34;
+  padding: 10px 30px;
+  cursor: pointer;
+  border-radius: 22px;
+  font-weight: bold;
+  margin: 16px;
+  transition: all 0.6s ease;
+}
+.prices .prices__wrapper .prices__item .prices__bottom .prices__button:hover {
+  color: #004f34;
+  background-color: #d1d1d1;
+  transition: all 0.6s ease;
+}
 .working {
   width: 100%;
   min-height: 70vh;
-  clip-path: polygon(0 7%, 0 93%, 75% 100%, 100% 93%, 100% 93%, 100% 7%, 25% 0);
-  background: black url("../img/candle.gif") right no-repeat;
+  z-index: 2;
+  clip-path: polygon(0 7%, 0 93%, 25% 100%, 100% 93%, 100% 93%, 100% 7%, 75% 0);
+  background: black url("../img/candle.gif") right center no-repeat;
 }
 .working .working__point {
   font-size: 30px;
@@ -304,8 +360,8 @@ header .cta:active {
 }
 .feedback form .submit {
   color: #f7f7f7;
-  background-color: #F15F79;
-  border: 1px solid #F15F79;
+  background-color: #004f34;
+  border: 1px solid #004f34;
   padding: 10px 30px;
   float: right;
   cursor: pointer;
@@ -314,7 +370,7 @@ header .cta:active {
   transition: all 0.6s ease;
 }
 .feedback form .submit:hover {
-  color: #F15F79;
+  color: #004f34;
   background-color: white;
   transition: all 0.6s ease;
 }
@@ -343,9 +399,9 @@ footer {
   padding-top: 100px;
 }
 footer .logo {
-  font-family: 'Roboto', sans-serif;
-  font-weight: 900;
-  font-size: 35px;
+  min-height: 150px;
+  background: url("../img/logo_white.png") center no-repeat;
+  background-size: cover;
 }
 footer i {
   font-size: 35px;
@@ -354,6 +410,9 @@ footer i {
   transition: all 0.6s ease;
 }
 footer i:hover {
-  color: #F15F79;
+  color: #004f34;
   transition: all 0.6s ease;
+}
+.prices .block-caption {
+  margin-top: 200px;
 }

@@ -1,4 +1,4 @@
-@red: #f9225e;
+@red: #004f34;
 
 * {
   padding: 0;
@@ -56,9 +56,9 @@ header {
   clip-path: polygon(0 0, 0 93%, 75% 100%, 100% 93%, 100% 0);
   color:white;
   .logo {
-    font-family: 'Roboto', sans-serif;
-    font-weight: 900;
-    font-size: 35px;
+    min-height: 100px;
+    background: url("../img/logo_white.png") center no-repeat;
+    background-size: cover;
   }
   // большая менюшка
   .nav-block {
@@ -67,11 +67,12 @@ header {
       list-style: none;
       display: block;
       float: right;
-      line-height: 300%;
+      line-height: 500%;
       height: 100%;
       margin: 0;
         li {
           display: inline;
+          font-size: 23px;
             a {
             color: white;
             text-decoration: none;
@@ -90,13 +91,13 @@ header {
   // слайдер меню на маленьких экранах
   .nav-icon {
     text-align: right;
-    line-height: 300%;
+    line-height: 500%;
   }
   .toggle-menu {
     background-color: black;
     position: absolute;
     display: none;
-    top: 10%;
+    top: 12%;
     left: 5%;
     width: 90%;
     .toggle-menu__list {
@@ -104,6 +105,7 @@ header {
       text-align: center;
       li {
         padding: 10px;
+        font-size: 30px;
         a {
           color: white;
           text-decoration: none;
@@ -282,12 +284,70 @@ header {
     transition: all 0.6s ease;
   }
 }
+//блок с ценами
+.prices {
+  clip-path: polygon(0 0,0 100%, 100% 100%, 100% 0, 25% 7%);
+  min-height: 80vh;
+  position: relative;
+  bottom: -5vh;
+  padding-bottom: 5vh;
+  .prices__wrapper {
+    padding: 15px;
+    .prices__item {
+      background-color: #d1d1d1;
+      min-height: 321px;
+      position: relative;
+      * {
+        position: static;
+      }
+      .prices__caption {
+        font-weight: bold;
+        font-size: 25px;
+        padding: 10px;
+        border-top: 1px solid @red;
+        border-bottom: 1px solid @red;
+      }
+      .prices__list {
+        padding: 10px;
+        list-style: none;
+        font-size: 18px;
+
+      }
+      .prices__bottom {
+        border-bottom: 1px solid @red;
+        border-top: 1px solid @red;
+        position: absolute;
+        width: 100%;
+        bottom: 0;
+        .prices__button {
+          color: #f7f7f7;
+          background-color: #004f34;
+          border: 1px solid #004f34;
+          padding: 10px 30px;
+          cursor: pointer;
+          border-radius: 22px;
+          font-weight: bold;
+          margin: 16px;
+          transition: all 0.6s ease;
+          &:hover {
+            color: #004f34;
+            background-color: #d1d1d1;
+            transition: all 0.6s ease;
+          }
+        }
+      }
+
+    }
+  }
+
+}
 //блок с порядком действий
 .working {
   width: 100%;
   min-height: 70vh;
-  clip-path: polygon(0 7%,0 93%, 75% 100%, 100% 93%, 100% 93%,100% 7%, 25% 0);
-  background: black url("../img/candle.gif") right no-repeat;
+  z-index: 2;
+  clip-path: polygon(0 7%,0 93%, 25% 100%, 100% 93%, 100% 93%,100% 7%, 75% 0);
+  background: black url("../img/candle.gif") right center no-repeat;
   .working__point {
     font-size: 30px;
     margin-top: 35px;
@@ -330,8 +390,8 @@ header {
       }
     .submit {
       color: #f7f7f7;
-      background-color: #F15F79;
-      border: 1px solid #F15F79;
+      background-color: #004f34;
+      border: 1px solid #004f34;
       padding: 10px 30px;
       float: right;
       cursor: pointer;
@@ -339,7 +399,7 @@ header {
       font-weight: bold;
       transition: all 0.6s ease;
       &:hover {
-        color: #F15F79;
+        color: #004f34;
         background-color: white;
         transition: all 0.6s ease;
       }
@@ -372,9 +432,9 @@ footer {
   min-height: 30vh;
   padding-top: 100px;
   .logo {
-    font-family: 'Roboto', sans-serif;
-    font-weight: 900;
-    font-size: 35px;
+    min-height: 150px;
+    background: url("../img/logo_white.png") center no-repeat;
+    background-size: cover;
   }
   i {
     font-size: 35px;
@@ -382,8 +442,15 @@ footer {
     cursor: pointer;
     transition: all 0.6s ease;
     &:hover {
-      color: #F15F79;
+      color: #004f34;
       transition: all 0.6s ease;
     }
+  }
+}
+
+//фиксы
+.prices {
+  .block-caption {
+    margin-top: 200px;
   }
 }
