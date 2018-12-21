@@ -30,7 +30,7 @@ body {
   font-size: 50px;
 }
 .block-caption .red-text {
-  color: #004f34;
+  color: #002560;
 }
 .block-description {
   margin: 20px auto;
@@ -78,7 +78,7 @@ header .nav-block .nav-block__list li a {
   margin-right: 1em;
 }
 header .nav-block .nav-block__list li a:hover {
-  color: #004f34;
+  color: #002560;
   transition: all 0.6s ease;
 }
 header .nav-icon {
@@ -107,7 +107,7 @@ header .toggle-menu .toggle-menu__list li a {
   transition: all 0.6s ease;
 }
 header .toggle-menu .toggle-menu__list li a:hover {
-  color: #004f34;
+  color: #002560;
   transition: all 0.6s ease;
 }
 header .caption {
@@ -183,30 +183,51 @@ header .cta:active {
   clip-path: polygon(0 0, 0 93%, 75% 100%, 100% 93%, 100% 0);
   padding-bottom: 200px;
 }
-.service .service-block {
+.service .prices__wrapper {
+  padding: 15px;
+}
+.service .prices__wrapper .prices__item {
+  background-color: #afa39e;
+  min-height: 321px;
+  position: relative;
+}
+.service .prices__wrapper .prices__item * {
+  position: static;
+}
+.service .prices__wrapper .prices__item .prices__caption {
+  font-weight: bold;
+  font-size: 25px;
   padding: 10px;
-  box-shadow: 0px 4px 8px rgba(0, 0, 0, 0.35);
-  box-sizing: border-box;
+  border-top: 1px solid #002560;
+  border-bottom: 1px solid #002560;
+}
+.service .prices__wrapper .prices__item .prices__list {
+  padding: 10px;
+  list-style: none;
+  font-size: 18px;
+}
+.service .prices__wrapper .prices__item .prices__bottom {
+  border-bottom: 1px solid #002560;
+  border-top: 1px solid #002560;
+  position: absolute;
+  width: 100%;
+  bottom: 0;
+}
+.service .prices__wrapper .prices__item .prices__bottom .prices__button {
+  color: #f7f7f7;
+  background-color: #002560;
+  border: 1px solid #002560;
+  padding: 10px 30px;
+  cursor: pointer;
+  border-radius: 22px;
+  font-weight: bold;
+  margin: 16px;
+  transition: all 0.6s ease;
+}
+.service .prices__wrapper .prices__item .prices__bottom .prices__button:hover {
+  color: #002560;
   background-color: #d1d1d1;
   transition: all 0.6s ease;
-}
-.service .service-block:hover {
-  box-shadow: 0px 10px 30px rgba(0, 0, 0, 0.4);
-  transition: all 0.6s ease;
-  z-index: 99;
-}
-.service .service-block .service-block__icon {
-  margin: 20px auto;
-  font-size: 45px;
-  color: #004f34;
-}
-.service .service-block h3 {
-  margin-top: 10px;
-}
-.service .service-block .service-block__description {
-  color: gray;
-  font-style: italic;
-  margin-top: 20px;
 }
 .slider .slide {
   height: 300px;
@@ -222,17 +243,17 @@ header .cta:active {
   width: 15px;
   height: 15px;
   background: #d1d1d1;
-  border: 1px solid #002f1f;
+  border: 1px solid #002560;
   box-sizing: border-box;
   border-radius: 50%;
   margin-right: 30px;
   cursor: pointer;
 }
 .slick-dots li.slick-active {
-  background: #002f1f;
+  background: #002560;
   border-radius: 50%;
   cursor: pointer;
-  border: 1px solid #002f1f;
+  border: 1px solid #002560;
 }
 .slick-dots li.slick-active button {
   width: 15px;
@@ -271,58 +292,13 @@ header .cta:active {
   bottom: -5vh;
   padding-bottom: 5vh;
 }
-.prices .prices__wrapper {
-  padding: 15px;
-}
-.prices .prices__wrapper .prices__item {
-  background-color: #d1d1d1;
-  min-height: 321px;
-  position: relative;
-}
-.prices .prices__wrapper .prices__item * {
-  position: static;
-}
-.prices .prices__wrapper .prices__item .prices__caption {
-  font-weight: bold;
-  font-size: 25px;
-  padding: 10px;
-  border-top: 1px solid #004f34;
-  border-bottom: 1px solid #004f34;
-}
-.prices .prices__wrapper .prices__item .prices__list {
-  padding: 10px;
-  list-style: none;
-  font-size: 18px;
-}
-.prices .prices__wrapper .prices__item .prices__bottom {
-  border-bottom: 1px solid #004f34;
-  border-top: 1px solid #004f34;
-  position: absolute;
-  width: 100%;
-  bottom: 0;
-}
-.prices .prices__wrapper .prices__item .prices__bottom .prices__button {
-  color: #f7f7f7;
-  background-color: #004f34;
-  border: 1px solid #004f34;
-  padding: 10px 30px;
-  cursor: pointer;
-  border-radius: 22px;
-  font-weight: bold;
-  margin: 16px;
-  transition: all 0.6s ease;
-}
-.prices .prices__wrapper .prices__item .prices__bottom .prices__button:hover {
-  color: #004f34;
-  background-color: #d1d1d1;
-  transition: all 0.6s ease;
-}
 .working {
   width: 100%;
-  min-height: 70vh;
+  padding-bottom: 100px;
   z-index: 2;
   clip-path: polygon(0 7%, 0 93%, 25% 100%, 100% 93%, 100% 93%, 100% 7%, 75% 0);
-  background: black url("../img/candle.gif") right center no-repeat;
+  background: black url("../img/candle.gif") right no-repeat;
+  background-position-x: calc(100% - 300px);
 }
 .working .working__point {
   font-size: 30px;
@@ -330,6 +306,11 @@ header .cta:active {
 }
 .working .working__point i {
   font-size: 38px;
+  float: left;
+}
+.working .working__point .working__point__text {
+  margin-left: 50px;
+  width: 475px;
 }
 .feedback form {
   margin-top: 30px;
@@ -360,8 +341,8 @@ header .cta:active {
 }
 .feedback form .submit {
   color: #f7f7f7;
-  background-color: #004f34;
-  border: 1px solid #004f34;
+  background-color: #002560;
+  border: 1px solid #002560;
   padding: 10px 30px;
   float: right;
   cursor: pointer;
@@ -370,7 +351,7 @@ header .cta:active {
   transition: all 0.6s ease;
 }
 .feedback form .submit:hover {
-  color: #004f34;
+  color: #002560;
   background-color: white;
   transition: all 0.6s ease;
 }
@@ -382,6 +363,7 @@ header .cta:active {
   clear: both;
 }
 .feedback .feedback__item .contact__icon {
+  color: #002560;
   float: left;
   font-size: 40px;
   width: 50px;
@@ -410,9 +392,37 @@ footer i {
   transition: all 0.6s ease;
 }
 footer i:hover {
-  color: #004f34;
+  color: #002560;
   transition: all 0.6s ease;
 }
 .prices .block-caption {
   margin-top: 200px;
+}
+@media only screen and (max-width: 1600px) {
+  .working {
+    background-position-x: calc(100% - 150px);
+  }
+}
+@media only screen and (max-width: 1270px) {
+  .working {
+    background-position-x: 100%;
+  }
+}
+@media only screen and (max-width: 960px) {
+  .working {
+    background: black;
+  }
+  .working .working__point__text {
+    width: auto !important;
+  }
+}
+@media only screen and (max-width: 700px) {
+  .caption {
+    margin-top: 0 !important;
+  }
+}
+@media only screen and (max-height: 670px) {
+  .caption {
+    margin-top: 0 !important;
+  }
 }

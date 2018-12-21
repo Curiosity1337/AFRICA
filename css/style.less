@@ -1,4 +1,4 @@
-@red: #004f34;
+@red: #002560;
 
 * {
   padding: 0;
@@ -194,29 +194,52 @@ header {
   background-color: #cab9b2;
   clip-path: polygon(0 0, 0 93%, 75% 100%, 100% 93%, 100% 0);
   padding-bottom: 200px;
-  .service-block {
-    padding: 10px;
-    box-shadow: 0px 4px 8px rgba(0, 0, 0, 0.35);
-    box-sizing: border-box;
-    background-color: #d1d1d1;
-    transition: all 0.6s ease;
-    &:hover {
-      box-shadow: 0px 10px 30px rgba(0, 0, 0, 0.4);
-      transition: all 0.6s ease;
-      z-index: 99;
-    }
-    .service-block__icon {
-      margin: 20px auto;
-      font-size: 45px;
-      color: @red;
-    }
-    h3 {
-      margin-top: 10px;
-    }
-    .service-block__description {
-      color: gray;
-      font-style: italic;
-      margin-top: 20px;
+  .prices__wrapper {
+    padding: 15px;
+    .prices__item {
+      background-color: #afa39e;
+      min-height: 321px;
+      position: relative;
+      * {
+        position: static;
+      }
+      .prices__caption {
+        font-weight: bold;
+        font-size: 25px;
+        padding: 10px;
+        border-top: 1px solid @red;
+        border-bottom: 1px solid @red;
+      }
+      .prices__list {
+        padding: 10px;
+        list-style: none;
+        font-size: 18px;
+
+      }
+      .prices__bottom {
+        border-bottom: 1px solid @red;
+        border-top: 1px solid @red;
+        position: absolute;
+        width: 100%;
+        bottom: 0;
+        .prices__button {
+          color: #f7f7f7;
+          background-color: @red;
+          border: 1px solid @red;
+          padding: 10px 30px;
+          cursor: pointer;
+          border-radius: 22px;
+          font-weight: bold;
+          margin: 16px;
+          transition: all 0.6s ease;
+          &:hover {
+            color: @red;
+            background-color: #d1d1d1;
+            transition: all 0.6s ease;
+          }
+        }
+      }
+
     }
   }
 }
@@ -238,17 +261,17 @@ header {
     width: 15px;
     height: 15px;
     background: #d1d1d1 ;
-    border: 1px solid #002f1f ;
+    border: 1px solid @red;
     box-sizing: border-box;
     border-radius: 50%;
     margin-right: 30px;
     cursor: pointer;
 
     &.slick-active {
-      background: #002f1f ;
+      background: @red ;
       border-radius: 50%;
       cursor: pointer;
-      border: 1px solid #002f1f ;
+      border: 1px solid @red;
       button {
         width: 15px;
         height: 15px;
@@ -291,68 +314,27 @@ header {
   position: relative;
   bottom: -5vh;
   padding-bottom: 5vh;
-  .prices__wrapper {
-    padding: 15px;
-    .prices__item {
-      background-color: #d1d1d1;
-      min-height: 321px;
-      position: relative;
-      * {
-        position: static;
-      }
-      .prices__caption {
-        font-weight: bold;
-        font-size: 25px;
-        padding: 10px;
-        border-top: 1px solid @red;
-        border-bottom: 1px solid @red;
-      }
-      .prices__list {
-        padding: 10px;
-        list-style: none;
-        font-size: 18px;
 
-      }
-      .prices__bottom {
-        border-bottom: 1px solid @red;
-        border-top: 1px solid @red;
-        position: absolute;
-        width: 100%;
-        bottom: 0;
-        .prices__button {
-          color: #f7f7f7;
-          background-color: #004f34;
-          border: 1px solid #004f34;
-          padding: 10px 30px;
-          cursor: pointer;
-          border-radius: 22px;
-          font-weight: bold;
-          margin: 16px;
-          transition: all 0.6s ease;
-          &:hover {
-            color: #004f34;
-            background-color: #d1d1d1;
-            transition: all 0.6s ease;
-          }
-        }
-      }
-
-    }
-  }
 
 }
 //блок с порядком действий
 .working {
   width: 100%;
-  min-height: 70vh;
+  padding-bottom: 100px;
   z-index: 2;
   clip-path: polygon(0 7%,0 93%, 25% 100%, 100% 93%, 100% 93%,100% 7%, 75% 0);
-  background: black url("../img/candle.gif") right center no-repeat;
+  background: black url("../img/candle.gif") right  no-repeat;
+  background-position-x: calc(~"100% - 300px");
   .working__point {
     font-size: 30px;
     margin-top: 35px;
     i {
       font-size: 38px;
+      float: left;
+    }
+    .working__point__text {
+      margin-left: 50px;
+      width: 475px;
     }
   }
 
@@ -390,8 +372,8 @@ header {
       }
     .submit {
       color: #f7f7f7;
-      background-color: #004f34;
-      border: 1px solid #004f34;
+      background-color: @red;
+      border: 1px solid @red;
       padding: 10px 30px;
       float: right;
       cursor: pointer;
@@ -399,7 +381,7 @@ header {
       font-weight: bold;
       transition: all 0.6s ease;
       &:hover {
-        color: #004f34;
+        color: @red;
         background-color: white;
         transition: all 0.6s ease;
       }
@@ -412,6 +394,7 @@ header {
     margin-top: 20px;
     clear: both;
     .contact__icon {
+      color: @red;
       float: left;
       font-size: 40px;
       width: 50px;
@@ -442,7 +425,7 @@ footer {
     cursor: pointer;
     transition: all 0.6s ease;
     &:hover {
-      color: #004f34;
+      color: @red;
       transition: all 0.6s ease;
     }
   }
@@ -453,4 +436,36 @@ footer {
   .block-caption {
     margin-top: 200px;
   }
+}
+//позиционируем свечку
+@media only screen and (max-width: 1600px) {
+  .working {
+    background-position-x: calc(~"100% - 150px");
+  }
+}
+
+@media only screen and (max-width: 1270px) {
+  .working {
+    background-position-x: 100%;
+  }
+}
+
+@media only screen and (max-width: 960px) {
+  .working {
+    background: black;
+    .working__point__text {
+      width: auto !important;
+    }
+  }
+}
+
+@media only screen and (max-width: 700px) {
+  .caption {
+    margin-top: 0 !important;
+  }
+}
+@media only screen and (max-height: 670px) {
+.caption {
+  margin-top: 0 !important;
+}
 }
