@@ -6,4 +6,7 @@ $(document).ready(function () {
         dots: true,
         arrows: false
     });
+    $('.prices__button').click(function () {
+        $('.layout').fadeIn();
+    })
 });
