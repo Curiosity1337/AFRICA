@@ -8,8 +8,10 @@ $(document).ready(function () {
     });
     $('.prices__button').click(function () {
         $('.layout').fadeIn();
+        $('body').addClass("noscroll")
     });
     $('.close').click(function () {
         $('.layout').fadeOut();
+        $('body').removeClass("noscroll")
     });
 });

@@ -14,6 +14,9 @@ a {
     text-decoration: none;
   }
 }
+.noscroll {
+  overflow: hidden;
+}
 .bg-cream {
   background-color: #cab9b2;
 }
@@ -438,6 +441,8 @@ footer {
 //попап с меню
 .layout {
   top:0;
+  left: 0;
+  bottom: 0;
   right: 0;
   padding: 5%;
   width: 100%;
@@ -445,6 +450,7 @@ footer {
   background: rgba(0, 0, 0, 0.6);
   position: fixed;
   display: none;
+  overflow-y: scroll;
   .close {
     color: @red !important;
   }
