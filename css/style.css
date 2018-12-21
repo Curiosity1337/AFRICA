@@ -422,11 +422,14 @@ footer i:hover {
   background-color: #cab9b2;
   padding: 2% 5%;
 }
-.layout .table-bg table {
+.layout .table-bg .menu-description {
+  width: 66% !important;
   margin: auto;
+}
+.layout .table-bg table {
   width: 66%;
   border-collapse: collapse;
-  margin-top: 15px;
+  margin: 15px auto auto;
 }
 .layout .table-bg table .eat-group {
   width: 100%;
