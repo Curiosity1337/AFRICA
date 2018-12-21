@@ -16,7 +16,7 @@ a:hover {
   background-color: #cab9b2;
 }
 body {
-  background-color: #999999;
+  background-color: #afa39e;
 }
 .wrapper {
   width: 100%;
@@ -274,7 +274,7 @@ header .cta:active {
 .about {
   width: 100%;
   height: 100px;
-  background: #d1d1d1;
+  background: #cab9b2;
   border-radius: 10px;
   margin-bottom: 20px;
   padding: 20px;
