@@ -409,6 +409,9 @@ footer i:hover {
   position: fixed;
   display: none;
 }
+.layout .close {
+  color: #002560 !important;
+}
 .layout .table-bg {
   background-color: #cab9b2;
   padding: 2% 5%;

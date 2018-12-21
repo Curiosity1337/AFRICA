@@ -8,5 +8,8 @@ $(document).ready(function () {
     });
     $('.prices__button').click(function () {
         $('.layout').fadeIn();
-    })
+    });
+    $('.close').click(function () {
+        $('.layout').fadeOut();
+    });
 });
