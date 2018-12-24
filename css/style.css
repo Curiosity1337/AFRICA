@@ -47,7 +47,7 @@ header {
   width: 100%;
   min-height: 100vh;
   padding: 3% 5%;
-  background: rgba(0, 0, 0, 0.8) url("../img/table-bg.jpg") no-repeat;
+  background: rgba(0, 0, 0, 0.8) url("../img/candles_bg.jpg") no-repeat;
   background-size: cover;
   background-blend-mode: overlay;
   clip-path: polygon(0 0, 0 93%, 75% 100%, 100% 93%, 100% 0);
