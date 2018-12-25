@@ -17,6 +17,60 @@ a {
 .noscroll {
   overflow: hidden;
 }
+//знак звонка
+.calling {
+  font-size: 50px;
+  color: @red;
+  background-color: #505050;
+  width: 100px;
+  height: 100px;
+  border-radius: 50%;
+  text-align: center;
+  line-height: 100px;
+  position: fixed;
+  bottom: 10%;
+  right: 10%;
+  cursor: pointer;
+  z-index: 999;
+
+}
+#calling {
+ .form {
+   background-color: #afa39e;
+   padding: 20px;
+   .input {
+     border: none;
+     background-color: #cab9b2;
+     color: black;
+     padding: 10px;
+     margin-bottom: 20px;
+     &::placeholder {
+       color: black;
+       font-weight: bold;
+     }
+     &:focus::placeholder {
+       color: transparent;
+     }
+
+   }
+   .submit {
+     color: #f7f7f7;
+     background-color: @red;
+     border: 1px solid @red;
+     padding: 10px 30px;
+     cursor: pointer;
+     border-radius: 22px;
+     font-weight: bold;
+     transition: all 0.6s ease;
+     &:hover {
+       color: @red;
+       background-color: white;
+       transition: all 0.6s ease;
+     }
+   }
+ }
+}
+
 .bg-cream {
   background-color: #cab9b2;
 }
@@ -45,7 +99,10 @@ body {
   color: #4c4c4c;
   font-size: 20px;
 }
-
+.number {
+  font-size: 25px;
+  margin-top: 30px;
+}
 .container-fluid {
   max-width: 1200px;
 }
@@ -455,6 +512,7 @@ footer {
   position: fixed;
   display: none;
   overflow-y: scroll;
+  z-index: 99999;
   .close {
     color: @red !important;
   }

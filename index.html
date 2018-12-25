@@ -2,7 +2,7 @@
 <html lang="en">
 <head>
     <meta charset="UTF-8">
-    <title>Africa</title>
+    <title>Поминки в кафе Африка</title>
     <meta name="viewport" content="width=350, initial-scale=1">
     <link href="css/bootstrap-grid.css" type="text/css" rel="stylesheet">
     <link href="css/bootstrap.css" type="text/css" rel="stylesheet">
@@ -14,6 +14,24 @@
 
 </head>
 <body>
+<div class="calling">
+    <i class="fas fa-phone"></i>
+</div>
+<div class="layout" id="calling">
+    <div class="container-fluid">
+        <div class="row">
+            <div class="col-12 col-lg-8 offset-lg-2 text-center form">
+                <i class="fas fa-times close"></i>
+                <strong>Оставьте свой номер телефона и мы вам перезвоним</strong> <br><br>
+                <form action="callback.php" method="post">
+                    <input class="input call" name="phone" type="text" placeholder="+7(___)___-__-__">
+                    <br>
+                    <input type="submit" class="submit" value="Заказать звонок">
+                </form>
+            </div>
+        </div>
+    </div>
+</div>
 <div class="wrapper-top bg-cream">
     <header>
         <div class="container-fluid">
@@ -36,15 +54,18 @@
                 </div>
                 <div class="col-12 caption text-center">
                     <h1>
-                    Поминки в кафе<br> Африка
+                    Поминки в кафе Африка
                     </h1>
                 </div>
 
-                <div class="col-12 description text-center">
+                <div class="col-12 col-lg-6 description text-center">
                     Западная «Африка»<br> наб. реки Фонтанки д.130<br>
-                    Восточная «Африка» <br> СПб,
-                    ул.Печатника Григорьева д.13<br>Закажите поминальный стол по тел. 922-58-72
                 </div>
+                <div class="col-12 col-lg-6 description text-center">
+                    Восточная «Африка» <br> СПб,
+                    ул.Печатника Григорьева д.13
+                </div>
+                <div class="col-12 number text-center">Закажите поминальный стол по тел. 922-58-72</div>
                 <div class="col-12 text-center">
                     <a href="#feedback" style="width: 300px;display: inline-block; margin-top: 30px">
                     <div class="cta">
@@ -58,7 +79,9 @@
                 </div>
 
             </div>
-        </div>
+            <iframe src="https://yandex.ru/map-widget/v1/?um=constructor%3A941dd7c78b75d91b787a8c09af2b7bce62087c34903ec625c5f4a507fd1cab76&amp;source=constructor" width="100%" height="400" frameborder="0"></iframe>
+
+</div>
         <div class="toggle-menu">
             <ul class="toggle-menu__list">
                 <li><a href="#service">Цены</a></li>
@@ -260,9 +283,9 @@
 
             </div>
             <div class="col-12 col-lg-7">
-                <form>
+                <form action="callback.php" method="post">
                     <input type="text" class="input small-input" placeholder="Имя"  name="name">
-                    <input type="email" class="input small-input" placeholder="Почта" style="float: right" name="mail">
+                    <input type="text" class="input small-input" placeholder="Телефон" style="float: right" name="phone">
                     <textarea class="input" placeholder="Примечание" name="message"></textarea>
                     <input type="submit" class="submit" value="Оставить заявку">
                 </form>

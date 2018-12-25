@@ -51,4 +51,13 @@ $(document).ready(function () {
         $('.layout').fadeOut();
         $('html').removeClass("noscroll")
     });
+
+    $('.calling').click(function () {
+        $('#calling').fadeIn();
+        $('html').addClass("noscroll")
+    });
+    $('.close').click(function () {
+        $('.layout').fadeOut();
+        $('html').removeClass("noscroll")
+    });
 });
