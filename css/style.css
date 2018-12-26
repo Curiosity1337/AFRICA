@@ -359,50 +359,37 @@ header .cta:active {
   clip-path: polygon(0 7%, 0 93%, 25% 100%, 100% 93%, 100% 93%, 100% 7%, 75% 0);
   background: black url("../img/candle.gif") right no-repeat;
   background-position-x: calc(100% - 300px);
+  background-position-y: 500px;
+  min-height: 1100px;
 }
-.working .working__point {
-  font-size: 30px;
-  margin-top: 35px;
-}
-.working .working__point i {
-  font-size: 38px;
-  float: left;
-}
-.working .working__point .working__point__text {
-  margin-left: 50px;
-  width: 475px;
-}
-.feedback iframe {
+.working form {
   margin-top: 30px;
 }
-.feedback form {
-  margin-top: 30px;
-}
-.feedback form .input {
+.working form .input {
   border: none;
   background-color: #cab9b2;
   color: black;
   padding: 10px;
   margin-bottom: 20px;
 }
-.feedback form .input::placeholder {
+.working form .input::placeholder {
   color: black;
   font-weight: bold;
 }
-.feedback form .input:focus::placeholder {
+.working form .input:focus::placeholder {
   color: transparent;
 }
-.feedback form .small-input {
+.working form .small-input {
   box-sizing: border-box;
   width: 45%;
   display: inline-block;
 }
-.feedback form textarea {
+.working form textarea {
   display: block;
   width: 100%;
   height: 115px;
 }
-.feedback form .submit {
+.working form .submit {
   color: #f7f7f7;
   background-color: #002560;
   border: 1px solid #002560;
@@ -413,28 +400,31 @@ header .cta:active {
   font-weight: bold;
   transition: all 0.6s ease;
 }
-.feedback form .submit:hover {
+.working form .submit:hover {
   color: #002560;
   background-color: white;
   transition: all 0.6s ease;
 }
-.feedback .contacts {
+.working .contacts {
   padding-top: 30px;
 }
-.feedback .feedback__item {
+.working .feedback__item {
   margin-top: 20px;
   clear: both;
 }
-.feedback .feedback__item .contact__icon {
+.working .feedback__item .contact__icon {
   color: #002560;
   float: left;
   font-size: 40px;
   width: 50px;
 }
-.feedback .feedback__item .feedback__item__cont {
+.working .feedback__item .feedback__item__cont {
   margin-left: 60px;
   padding-top: 10px;
   font-size: 25px;
+}
+.feedback {
+  padding-top: 100px;
 }
 footer {
   margin-top: 100px;
@@ -513,12 +503,9 @@ footer i:hover {
     background-position-x: 100%;
   }
 }
-@media only screen and (max-width: 960px) {
+@media only screen and (max-width: 991px) {
   .working {
     background: black;
-  }
-  .working .working__point__text {
-    width: auto !important;
   }
 }
 @media only screen and (max-width: 700px) {
